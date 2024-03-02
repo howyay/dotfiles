@@ -1,0 +1,21 @@
+redis: {}
+use_default_settings: true
+search:
+  autocomplete: duckduckgo
+  default_lang: all
+server:
+  method: GET
+ui:
+  query_in_title: true
+enabled_plugins:
+  #- 'Hostname replace'  # see hostname_replace configuration below
+  - Open Access DOI rewrite
+  - Tracker URL remover
+  - Self Information
+engines:
+  - name: brave
+    disabled: true
+  - name: duckduckgo
+    disabled: true
+  - name: qwant
+    disabled: true

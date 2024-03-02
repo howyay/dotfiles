@@ -1,0 +1,51 @@
+.overview-icon-with-label, .folder-name-label {
+    text-shadow: none !important;
+    color: white !important;
+}
+
+.app-well-app:hover .overview-icon,
+.app-well-app:focus .overview-icon,
+.app-well-app:selected .overview-icon,
+.app-well-app.app-folder .overview-icon{
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+	color: white !important;
+	background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* "no results" / "searching..." text*/
+.search-statustext, .search-statustext-om2 {
+	text-shadow: none !important;
+}
+
+.page-indicator-icon {
+	background-color: white;
+}
+
+.search-section-content {
+	color: white !important;
+}
+
+.search-provider-icon .list-search-provider-content .list-search-provider-details {
+	color: white !important;
+}
+.list-search-result .list-search-result-title {
+	color: white !important;
+}
+/* search result listitem -> item description */
+.list-search-result .list-search-result-description {
+	color: lightgray;
+}
+	
+.list-search-result:focus,
+.search-provider-icon:focus,
+.list-search-result:hover,
+.search-provider-icon:hover,
+.list-search-result:selected,
+.search-provider-icon:selected {
+	background-color: rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.calendar .calendar-day-base.calendar-day-heading {
+height:1.4em;
+  }

@@ -1,0 +1,36 @@
+/* hides the native tabs */
+#TabsToolbar > .toolbar-items {
+  visibility: hidden;
+}
+
+/* #TabsToolbar > .titlebar-buttonbox-container > .titlebar-buttonbox toolbarbutton {
+  padding: 10px !important;
+  border-radius: 4px;
+  margin-right: 4px !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+ */
+/* #TabsToolbar > .titlebar-buttonbox-container {
+  margin-right: 4px;
+} */
+
+#TabsToolbar {
+/*   height: 49px; */
+/*   color: #ffffff !important; */
+}
+
+/* leaves space for the window buttons */
+#nav-bar {
+    margin-top: -42px;
+    /*margin-left: 70px;*/
+/*     margin-bottom: -0px; */
+/*  border-radius: 10px;*/
+  box-shadow: none !important;
+  /*background-color: #f8f8f8ff !important;*/
+}
+
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}

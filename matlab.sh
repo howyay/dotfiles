@@ -1,0 +1,1 @@
+env LD_PRELOAD="/usr/lib64/libfreetype.so.6 /usr/lib64/libbz2.so.1 /usr/lib64/libz.so.1 /usr/lib64/libharfbuzz.so.0 /usr/lib64/libbrotlidec.so.1 /usr/lib64/libglib-2.0.so.0 /usr/lib64/libgraphite2.so.3 /usr/lib64/libbrotlicommon.so.1 /usr/lib64/libpcre2-8.so.0 /usr/lib64/libstdc++.so.6 /usr/lib64/libc.so.6" matlab -desktop 
