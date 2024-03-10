@@ -173,6 +173,7 @@
     driSupport32Bit = true;
   };
 
+  services.resolved.enable = true;
   services.ratbagd.enable = true;
   #services.ollama.enable = true;
   services.gnome.at-spi2-core.enable = true;
@@ -180,7 +181,10 @@
   services.openssh.enable = true;
   services.cockpit.enable = true;
   services.upower.enable = true; #laptop battery
-  services.tailscale.enable = true;
+  services.tailscale = {
+    enable = true;
+    extraUpFlags = [ "--operator=haoye"];
+  };
   services.flatpak.enable = true;
   services.udisks2.enable = true; #gnome-disks
   services.gvfs.enable = true; #nautilus trash
