@@ -159,5 +159,11 @@
     #CUDA_CACHE_PATH = "${config.xdg.cacheHome}/nv"; #~/.nv/ useless
   };
 
+  home.file.wezterm = {
+    enable = true;
+    source = ./.wezterm.lua;
+    target = "./.wezterm.lua";
+  };
+
   programs.home-manager.enable = true;
 }
