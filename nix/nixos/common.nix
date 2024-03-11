@@ -78,7 +78,7 @@
   users.users.haoye = {
     isNormalUser = true;
     description = "haoye";
-    extraGroups = [ "networkmanager" "wheel" "openrazer" "dialout"];
+    extraGroups = [ "docker" "networkmanager" "wheel" "openrazer" "dialout"];
     #packages = with pkgs; [ ];
     shell = pkgs.fish;
     hashedPassword = "$y$j9T$dL3z9UE9YIvdWQyidgM1K0$NNNIRmUftDMmCSgYjXW.jgRHOC8v9KkZ7mOC7hqYYd4";
@@ -102,9 +102,13 @@
   networking.firewall.enable = true;
 
   virtualisation.waydroid.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    logDriver = "json-file";
+  };
   virtualisation.podman = {
     enable = true;
-    dockerCompat = true;
+    #dockerCompat = true;
     defaultNetwork.settings.dns_enabled = true;
   };
   virtualisation.libvirtd.enable = true;
