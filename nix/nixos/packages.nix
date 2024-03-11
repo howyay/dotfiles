@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     wget
     kitty
+    wezterm
     lutris
     adw-gtk3
     gnome.gnome-software
