@@ -57,6 +57,7 @@
     libsForQt5.kleopatra
     yubikey-manager-qt
     android-tools
+    capitaine-cursors
     winetricks
     radicle-cli
   ];
@@ -154,6 +155,8 @@
     #GNUPGHOME = "${config.xdg.dataHome}/gnupg"; #~/.gnupg/
     LESSHISTFILE = "${config.xdg.stateHome}/lesshst"; #~/.lesshst
     NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npmrc";
+    XCURSOR_PATH = "${pkgs.capitaine-cursors}/share/icons";
+    XCURSOR_THEME = "capitaine-cursors";
     #_JAVA_OPTIONS = "-Djava.util.prefs.userRoot=${config.xdg.configHome}/java"; #~/.java/ doesnt necessarily work
     #GTK2_RC_FILES = "${config.xdg.configHome}/gtk-2.0/gtkrc"; #~/.gtkrc-2.0 nwg-look useless
     #CUDA_CACHE_PATH = "${config.xdg.cacheHome}/nv"; #~/.nv/ useless
