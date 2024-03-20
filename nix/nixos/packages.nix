@@ -4,15 +4,14 @@
     kitty
     wezterm
     lutris
-    adw-gtk3
     gnome.gnome-software
     gnome.gnome-tweaks
-    #gnome.adwaita-icon-theme
     gnome.nautilus
     gnome.sushi
     gnome.gnome-disk-utility
     gnome.gnome-system-monitor
     gnome.gnome-boxes
+    networkmanagerapplet
     #nautilus-open-any-terminal
     #gnome.nautilus-python
     #steamtinkerlaunch

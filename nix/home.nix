@@ -16,7 +16,6 @@
     nixos-generators
     libnotify
     wl-clipboard
-    adoptopenjdk-jre-openj9-bin-8
     glib
     nwg-look
     grim
@@ -34,8 +33,7 @@
     gnumake
     gcc-arm-embedded
     orca
-    #at-spi2-core
-    davinci-resolve
+    #davinci-resolve
     brightnessctl
     podman-compose
     inotify-tools
@@ -50,16 +48,22 @@
     bun
     lzip
     xdg-ninja
-    yaru-theme
     zotero
     jetbrains.dataspell
     conda
-    libsForQt5.kleopatra
+    kdePackages.kleopatra
     yubikey-manager-qt
     android-tools
-    capitaine-cursors
     winetricks
     radicle-cli
+    vesktop
+    yubioath-flutter
+    lazygit
+    resources
+    temurin-bin
+    #gnome.adwaita-icon-theme
+    #capitaine-cursors
+    #adw-gtk3
   ];
 
   qt.enable = true;
