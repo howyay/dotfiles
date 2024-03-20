@@ -203,10 +203,16 @@
       type = "Application";
   };
 
+  xdg.dataFile.capitaine-cursors = {
+    enable = true;
+    recursive = true;
+    source = "${pkgs.capitaine-cursors}/share/icons/capitaine-cursors";
+    target = "icons/capitaine-cursors";
+  };
+
   gtk = {
     enable = true;
     cursorTheme = {
-      package = pkgs.capitaine-cursors;
       name = "capitaine-cursors";
     };
     theme = {
@@ -214,8 +220,6 @@
       name = "adw-gtk3";
     };
     iconTheme = {
-      #package = pkgs.yaru-theme;
-      #name = "Yaru-blue";
       package = pkgs.gnome.adwaita-icon-theme;
       name = "Adwaita";
     };
