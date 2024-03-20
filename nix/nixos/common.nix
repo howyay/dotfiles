@@ -87,11 +87,11 @@
   };
 
   # programs.mtr.enable = true;
-  programs.gnupg.agent = {
-    enable = true;
-    enableSSHSupport = true;
-    pinentryFlavor = "qt";
-  };
+  #programs.gnupg.agent = {
+  #  enable = true;
+  #  enableSSHSupport = true;
+  #  pinentryPackage = pkgs.pinentry-gnome3;
+  #};
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -169,7 +169,7 @@
   programs.seahorse.enable = true;
 
   hardware.opentabletdriver.enable = true;
-  hardware.gpgSmartcards.enable = true;
+  #hardware.gpgSmartcards.enable = true;
   hardware.openrazer.enable = true;
   hardware.xone.enable = true;
   hardware.keyboard.qmk.enable = true;
