@@ -151,17 +151,6 @@
         xdotool
         xorg.xprop
         vkbasalt
-        #openssl 
-        #openssl_1_1
-        #ncurses6
-        #nghttp2 
-        #libidn2 
-        #rtmpdump 
-        #libpsl 
-        #curl 
-        #krb5 
-        #keyutils
-        #libuuid
       ];
     };
   };
