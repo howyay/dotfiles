@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, lib, ... }:
 {
   home.username = "haoye";
   home.homeDirectory = "/home/haoye";
@@ -175,6 +175,30 @@
   };
 
   };
+
+  gtk = {
+    enable = true;
+    cursorTheme = {
+      package = pkgs.capitaine-cursors;
+      name = "capitaine-cursors";
+    };
+    theme = {
+      package = pkgs.adw-gtk3;
+      name = "adw-gtk3";
+    };
+    iconTheme = {
+      #package = pkgs.yaru-theme;
+      #name = "Yaru-blue";
+      package = pkgs.gnome.adwaita-icon-theme;
+      name = "Adwaita";
+    };
+    font = {
+      name = "Sarasa UI SC Nerd Font";
+      size = 11;
+    };
+  };
+
+  home.activation.removeGTK4Theming = lib.hm.dag.entryAfter ["writeBoundary"] ''rm ${config.xdg.configHome}/gtk-4.0/gtk.css'';
 
   programs.home-manager.enable = true;
 }
