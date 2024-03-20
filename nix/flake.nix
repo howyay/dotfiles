@@ -32,9 +32,6 @@
     myPkgs = system: (import nixpkgs {
       inherit system;
       config.allowUnfree = true;
-      #config.permittedInsecurePackages = [
-      #  "openssl-1.1.1w"
-      #];
       overlays = [ (import ./overlays.nix)];
     });
     forSystems = systems: function:
