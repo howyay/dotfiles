@@ -167,6 +167,8 @@
     driSupport = true;
     driSupport32Bit = true;
   };
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   services.resolved.enable = true;
   services.ratbagd.enable = true;
