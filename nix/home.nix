@@ -203,13 +203,6 @@
       type = "Application";
   };
 
-  xdg.dataFile.capitaine-cursors = {
-    enable = true;
-    recursive = true;
-    source = "${pkgs.capitaine-cursors}/share/icons/capitaine-cursors";
-    target = "icons/capitaine-cursors";
-  };
-
   gtk = {
     enable = true;
     cursorTheme = {
