@@ -82,7 +82,10 @@
   programs.vscode.enable = true;
   programs.fish.enable = true;
   programs.zoxide.enable = true;
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    lfs.enable = true;
+  };
   programs.ripgrep.enable = true;
   programs.fuzzel.enable = true;
   programs.eza.enable = true;
