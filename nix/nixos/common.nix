@@ -170,6 +170,7 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
+  services.pcscd.enable = true;
   services.resolved.enable = true;
   services.ratbagd.enable = true;
   #services.ollama.enable = true;
