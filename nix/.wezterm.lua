@@ -8,10 +8,11 @@ local config = wezterm.config_builder()
 
 -- For example, changing the color scheme:
 -- config.color_scheme = 'AdventureTime'
-config.font = wezterm.font 'Sarasa Mono SC Nerd Font'
+config.font = wezterm.font 'Sarasa Term Slab SC Nerd Font'
 config.hide_tab_bar_if_only_one_tab = true
 config.enable_wayland = true
 config.hide_mouse_cursor_when_typing = false
+config.front_end="WebGpu"
 
 -- and finally, return the configuration to wezterm
 return config
